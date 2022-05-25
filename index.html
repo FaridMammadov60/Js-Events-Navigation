@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SoundJS/1.0.2/soundjs.min.js"
+        integrity="sha512-tWGC9KCH7gq1wgk/ZwaX1kd7bQq8M8ekETvWy0Mk8d9+d9XWHR4F3CuzbPJnUnu/eyEX/rPyYguXHtvN6WzcRQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Assets/Css/style.css">
     <title>Car drive</title>
@@ -18,9 +21,17 @@
         <div class="row">
             <div id="box"></div>
             <i id="icon" class="fa-solid fa-truck"></i>
+            <figure>
+                <audio src=""></audio>
+            </figure>
         </div>
     </div>
-    
+    <audio style="display: none;" id="audio" controls="controls">
+        <source id="oggSource" data-value="./Assets/Js/edis.mp3" src="./mixkit-passing-car-and-urban-ambience-1554.wav"
+            type="audio/ogg">
+        </source>
+    </audio>
+
 
 </body>
 <script src="./Assets/Js/script.js"></script>
