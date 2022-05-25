@@ -4,13 +4,67 @@
     box-sizing: border-box;
 }
 
+/*car drive start*/
 #box {
-    border: 5px solid;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    background-color: blue;
+}
+
+#icon {
     background-color: gray;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    color: white; 
-    
+    font-size: 100px;
+    color: teal;
+}
+
+/*car drive end*/
+/*sidebar start*/
+#side {
+    height: 5000px;
+}
+
+#sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    transition: 0.5s;
+}
+
+#sidebar i {
+    font-size: 41px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: wheat;
+}
+
+#sidebar ul {
+    list-style: none;
+
+}
+
+#sidebar ul li {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.close {
+    transform: translate(-300px, 0);
+
+}
+
+i {
+    font-size: 50px;
+    padding: 20px;
+    color: teal;
+    cursor: pointer;
 }
